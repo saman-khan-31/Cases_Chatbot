@@ -12,15 +12,16 @@
             align-items: flex-start;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            background: transparent; /* ✅ Changed from white */
             padding-top: 5vh;
+	    overflow: hidden;
         }
         .chat-container {
-            width: 80%;
-            max-width: 1000px;
+            width: 100vw;          /* Full viewport width */
+    max-width: none;       /* Remove any max width limit */
             background: white;
             padding: 5px;
-            border-radius: 10px;
+            border-radius: 0px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             height: 85vh;
         }
